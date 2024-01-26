@@ -14,7 +14,7 @@
   <!-- BODY SECTION STARTS -->
   <body>
     <h1>MASH</h1>
-    <p class="description">Select an answer and your future will be foretold.</p>
+    <p class="description">Fill in the blanks and your future will be foretold.</p>
     <form action="" method="post" id="mash">
       <div id="answers" class="hide">
         <p>Your home is in the <span id="answer_1"></span> with a <span id="answer_3"></span>. Your transportation is<span id="answer_2"></span> who owns a <span id="home"></span>.
@@ -22,39 +22,24 @@
       <div class="bucket">
         <div class="choice-bucket">
           <h4 class="highlight">Choose a cardinal direction:</h4>
-<form action="/action_page.php">
-<input type="radio" id="answer_1" name="cardinal_direction" value="North">
- <label for="north">North</label><br>
- <input type="radio" id="answer_1" name="cardinal_direction" value="East">
- <label for="east">East</label><br>
- <input type="radio" id="answer_1" name="cardinal_direction" value="South">
- <label for="south">South</label><br>
- <input type="radio" id="answer_1" name="cardinal_direction" value="West">
- <label for="west">West</label><br>
+          <input name="answer_1[]" type="text">
+          <input name="answer_1[]" type="text">
+          <input name="answer_1[]" type="text">
+          <input name="answer_1[]" type="text">
         </div>
         <div class="choice-bucket">
-          <h4 class="highlight">Choose a vehicle:</h4>
-          <form action="/action_page.php">
-<input type="radio" id="answer_2" name="vehicle" value="Truck">
- <label for="truck">Truck</label><br>
- <input type="radio" id="answer_2" name="vehicle" value="Car">
- <label for="car">Car</label><br>
- <input type="radio" id="answer_2" name="vehicle" value="Van">
- <label for="van">Van</label><br>
- <input type="radio" id="answer_2" name="vehicle" value="Motorcycle">
- <label for="motorcycle">Motorcycle</label><br>
+          <h4 class="highlight">Choose a vehicle</h4>
+          <input name="answer_2[]" type="text">
+          <input name="answer_2[]" type="text">
+          <input name="answer_2[]" type="text">
+          <input name="answer_2[]" type="text">
         </div>
         <div class="choice-bucket">
-          <h4 class="highlight">Choose an animal:</h4>
-           <form action="/action_page.php">
-<input type="radio" id="answer_2" name="animal" value="Hamster">
- <label for="hamster">Hamster</label><br>
- <input type="radio" id="answer_2" name="animal" value="Fish">
- <label for="fish">Fish</label><br>
- <input type="radio" id="answer_2" name="animal" value="Cat">
- <label for="cat">Cat</label><br>
- <input type="radio" id="answer_2" name="animal" value="Dog">
- <label for="dog">Dog</label><br>
+          <h4 class="highlight">Choose an animal</h4>
+          <input name="answer_3[]" type="text">
+          <input name="answer_3[]" type="text">
+          <input name="answer_3[]" type="text">
+          <input name="answer_3[]" type="text">
         </div>
       </div>
       <button type="submit" class="button-submit">Tell my fortune</button>
@@ -65,3 +50,4 @@
   <!-- 2021 New Course -->
 
 </html>
+
